@@ -25,7 +25,7 @@ DATASET:
   VAL:
     ANN_FILE: ''
     IMG_PREFIX: ''
-  VIDEO_ROOT: /home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/video/SEN0227.mp4
+  VIDEO_ROOT: /home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/video/jy4.mp4
   VOCABULARY:
     EXCLUDE_TOKENS:
     - __OFF__
@@ -38,7 +38,7 @@ PERIODS:
   CHECKPOINT: 1
   EVAL: 1
   LOG_ITERS: 1
-RESUME: /home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/model_params/pt_model_best.pth.tar
+RESUME: /home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/model_params/ft_model_best.pth.tar
 SEED: 33
 SOLVER:
   ADAM:

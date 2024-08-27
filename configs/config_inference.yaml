@@ -6,7 +6,7 @@ DATASET:
   VAL:
     IMG_PREFIX: ""
     ANN_FILE: ""
-  VIDEO_ROOT: "/home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/video/SEN0227.mp4"
+  VIDEO_ROOT: "/home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/video/jy4.mp4"
 
   WORKER_PER_GPU: 16  #16
 
@@ -51,7 +51,7 @@ PERIODS:
   CHECKPOINT: 1
   LOG_ITERS: 1
 OUTPUT_DIR: outputs/inference
-RESUME: "/home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/model_params/pt_model_best.pth.tar"
+RESUME: "/home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/model_params/ft_model_best.pth.tar"
 GPU_ID: 5
 NOTE: ""
 

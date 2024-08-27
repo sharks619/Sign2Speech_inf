@@ -81,7 +81,7 @@ _C.PERIODS.LOG_ITERS = 50
 _C.OUTPUT_DIR = "outputs/ksl"
 _C.RESUME = ""
 _C.GPU_ID = 0
-_C.RESUME = "" #"/home/PATH_TO/outputs/ksl/model_best.pth.tar"
+_C.RESUME = "" #"/home/PATH_TO/outputs/ksl/ft_model_best.pth.tar"
 _C.NOTE = ""
 
 # Reproducability

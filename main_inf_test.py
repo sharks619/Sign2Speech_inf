@@ -5,6 +5,7 @@ import tensorflow as tf
 import cv2
 from itertools import groupby
 from typing import List, Tuple
+import logging
 
 from lib.config import get_cfg
 from lib.engine.defaults import default_argument_parser, default_setup
@@ -85,10 +86,10 @@ def validate(model, val_dataset, vocab, device):
 
         print('Predicted gloss:', gls_hyp)
 
-
+import os
 def main(args):
     start_time = time.time()
-
+    logger = logging.getLogger()
     cfg = setup(args)
     cfg.freeze()
 
@@ -96,15 +97,18 @@ def main(args):
              '송파': 10, '지하철': 11, '무엇': 12, '가다': 13, '방법': 14, '여기': 15, '목적': 16, '건너다': 17, '명동': 18,
              '보다': 19, '시청': 20, '신호등': 21, '저기': 22, '다음': 23, '도착': 24, '우회전': 25, '좌회전': 26, '찾다': 27, '길': 28}
 
-    video_path = 'video/SEN0227.mp4'
+    video_path = cfg.DATASET.VIDEO_ROOT
     cap = cv2.VideoCapture(video_path)
     frames = []
-
+    count = 0
     while cap.isOpened():
         success, frame = cap.read()
         if not success:
             break
         frames.append(frame)
+        frame_filename = os.path.join('/home/fjqmfl5676/PycharmProjects/Sign2Speech_inf', f"frame_{count}.jpg")
+        count += 1
+        cv2.imwrite(frame_filename, frame)
     cap.release()
 
     frames = np.array(frames)
@@ -114,6 +118,13 @@ def main(args):
     checkpoint = torch.load(cfg.RESUME, map_location='cpu')
     model.load_state_dict(checkpoint['state_dict'])
 
+    logger.info(
+        "Loaded checkpoint from {}.  "
+        "start_epoch: {cp[epoch]}  "
+        "recoded WER: {cp[wer]:.3f} (best: {cp[best_wer]:.3f})".format(
+            cfg.RESUME, cp=checkpoint
+        )
+    )
     device = torch.device("cpu")
     model.to(device)
 
