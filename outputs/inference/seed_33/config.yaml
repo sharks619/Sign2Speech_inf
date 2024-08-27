@@ -1,0 +1,66 @@
+CUDNN_BENCHMARK: false
+CUDNN_DETERMINISTIC: true
+DATASET:
+  DATA_ROOT: ''
+  TRAIN:
+    ANN_FILE: ''
+    IMG_PREFIX: ''
+  TRANSFORM:
+    CROP_SIZE:
+    - 224
+    - 224
+    MEAN:
+    - 0.0637
+    - 0.0988
+    - 0.2312
+    RESIZE_IMG:
+    - 256
+    - 256
+    STD:
+    - 0.0643
+    - 0.0556
+    - 0.115
+    TEMPORAL_CROP_RATIO: 0.0
+    TEMPORAL_SCALING: 1.0
+  VAL:
+    ANN_FILE: ''
+    IMG_PREFIX: ''
+  VIDEO_ROOT: /home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/video/SEN0227.mp4
+  VOCABULARY:
+    EXCLUDE_TOKENS:
+    - __OFF__
+  WORKER_PER_GPU: 16
+GPU_ID: 5
+MODEL: {}
+NOTE: ''
+OUTPUT_DIR: outputs/inference/seed_33
+PERIODS:
+  CHECKPOINT: 1
+  EVAL: 1
+  LOG_ITERS: 1
+RESUME: /home/fjqmfl5676/PycharmProjects/Sign2Speech_inf/model_params/pt_model_best.pth.tar
+SEED: 33
+SOLVER:
+  ADAM:
+    BETA1: 0.9
+    BETA2: 0.999
+    EPS: 1.0e-08
+    WEIGHT_DECAY: 0.0001
+  BASE_LR: 0.0001
+  BATCH_PER_GPU: 1
+  BIAS_LR_FACTOR: 1.0
+  GAMMA: 0.5
+  LR_SCHEDULER_NAME: WarmupMultiStepLR
+  OPTIM_NAME: Adam
+  RAMPDOWN_ITERS: 0
+  SGD:
+    MOMENTUM: 0.9
+    NESTEROV: true
+    WEIGHT_DECAY: 0.0005
+  STEPS:
+  - 40
+  - 60
+  WARMUP_FACTOR: 0
+  WARMUP_ITERS: 0
+  WARMUP_METHOD: linear
+  WEIGHT_DECAY_NORM: 0.0
