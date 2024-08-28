@@ -1,0 +1,72 @@
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_openmp_mutex             5.1                       1_gnu  
+absl-py                   0.15.0                   pypi_0    pypi
+astunparse                1.6.3                    pypi_0    pypi
+ca-certificates           2024.7.2             h06a4308_0  
+cachetools                5.5.0                    pypi_0    pypi
+certifi                   2024.7.4                 pypi_0    pypi
+charset-normalizer        3.3.2                    pypi_0    pypi
+flatbuffers               1.12                     pypi_0    pypi
+fvcore                    0.1.2.post20201020          pypi_0    pypi
+gast                      0.3.3                    pypi_0    pypi
+google-auth               2.34.0                   pypi_0    pypi
+google-auth-oauthlib      0.4.6                    pypi_0    pypi
+google-pasta              0.2.0                    pypi_0    pypi
+grpcio                    1.32.0                   pypi_0    pypi
+h5py                      2.10.0                   pypi_0    pypi
+idna                      3.7                      pypi_0    pypi
+importlib-metadata        8.4.0                    pypi_0    pypi
+keras-preprocessing       1.1.2                    pypi_0    pypi
+ld_impl_linux-64          2.38                 h1181459_1  
+libffi                    3.4.4                h6a678d5_1  
+libgcc-ng                 11.2.0               h1234567_1  
+libgomp                   11.2.0               h1234567_1  
+libstdcxx-ng              11.2.0               h1234567_1  
+markdown                  3.7                      pypi_0    pypi
+markupsafe                2.1.5                    pypi_0    pypi
+ncurses                   6.4                  h6a678d5_0  
+numpy                     1.19.5                   pypi_0    pypi
+oauthlib                  3.2.2                    pypi_0    pypi
+opencv-python             4.2.0.32                 pypi_0    pypi
+openssl                   3.0.14               h5eee18b_0  
+opt-einsum                3.3.0                    pypi_0    pypi
+pandas                    1.0.3                    pypi_0    pypi
+pillow                    10.4.0                   pypi_0    pypi
+pip                       24.2             py38h06a4308_0  
+portalocker               2.10.1                   pypi_0    pypi
+protobuf                  3.20.3                   pypi_0    pypi
+pyasn1                    0.6.0                    pypi_0    pypi
+pyasn1-modules            0.4.0                    pypi_0    pypi
+python                    3.8.19               h955ad1f_0  
+python-dateutil           2.9.0.post0              pypi_0    pypi
+pytz                      2024.1                   pypi_0    pypi
+pyyaml                    6.0.2                    pypi_0    pypi
+readline                  8.2                  h5eee18b_0  
+requests                  2.32.3                   pypi_0    pypi
+requests-oauthlib         2.0.0                    pypi_0    pypi
+rsa                       4.9                      pypi_0    pypi
+setuptools                59.5.0                   pypi_0    pypi
+six                       1.15.0                   pypi_0    pypi
+sqlite                    3.45.3               h5eee18b_0  
+tabulate                  0.9.0                    pypi_0    pypi
+tensorboard               2.11.2                   pypi_0    pypi
+tensorboard-data-server   0.6.1                    pypi_0    pypi
+tensorboard-plugin-wit    1.8.1                    pypi_0    pypi
+tensorflow                2.4.1                    pypi_0    pypi
+tensorflow-estimator      2.4.0                    pypi_0    pypi
+termcolor                 1.1.0                    pypi_0    pypi
+tk                        8.6.14               h39e8969_0  
+torch                     1.10.1+cu111             pypi_0    pypi
+torchaudio                0.10.1+cu111             pypi_0    pypi
+torchvision               0.11.2+cu111             pypi_0    pypi
+tqdm                      4.66.5                   pypi_0    pypi
+typing-extensions         3.7.4.3                  pypi_0    pypi
+urllib3                   2.2.2                    pypi_0    pypi
+werkzeug                  3.0.4                    pypi_0    pypi
+wheel                     0.43.0           py38h06a4308_0  
+wrapt                     1.12.1                   pypi_0    pypi
+xz                        5.4.6                h5eee18b_1  
+yacs                      0.1.8                    pypi_0    pypi
+zipp                      3.20.0                   pypi_0    pypi
+zlib                      1.2.13               h5eee18b_1  
