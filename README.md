@@ -1,39 +1,25 @@
-# 손말이음 - 청각장애인을 위한 AI 기반 실시간 의사소통 서비스
+# 손말이음 - 청각장애인을 위한 AI 기반 실시간 의사소통 서비스 (Inference)
 
-![Sonmalyieum Overview](./image/손말이음.png)
+![Sonmalyieum Overview](./image/손말이음.png)  
 *Figure: Sonmalyieum Project Overview and Key Features*
 
 ## Overview
 
-**손말이음 (Sonmalyieum)** is an AI-based real-time communication service designed to bridge the communication gap between hearing-impaired and non-impaired individuals.
+**손말이음 (Sonmalyieum)** is an AI-based real-time communication service that provides seamless communication between hearing-impaired and non-impaired individuals. This project supports three core functionalities: **Sign2Speech**, **Speech2Sign**, and **Multi-party Communication**.
 
-- Developed during the **SKT FLY AI Academy**, the project incorporates three core functionalities:
-  1. **수어번역 (Sign2Speech)** – Real-time translation of Korean Sign Language (KSL) into text and speech.
-  2. **수어생성 (Speech2Sign)** – Converts spoken language into sign language using a 3D avatar.
-  3. **다중대화 (Multi-party Communication)** – Facilitates group conversations, translating between speech and sign language in real-time.
+This repository focuses on the **Sign2Speech** feature, providing the necessary scripts and tools for running inference using the pre-trained model. This feature translates Korean Sign Language (KSL) into both text and speech in real-time.
 
-This repository specifically includes the code for the **Sign2Speech** feature, which allows for real-time translation of KSL gestures into both text and speech.
+## Model Information
 
-## Sign2Speech Feature
+- The **Sign2Speech** feature is powered by a deep learning model trained on the **KSL-GUIDE** dataset, which is a large-scale dataset specifically designed for Korean Sign Language (KSL).
+- The pre-trained model provided here is capable of recognizing key KSL gestures and translating them into text and speech.
 
-This functionality enables users to:
+## Input Options
+You can provide either:
+- **Live webcam feed**: By modifying the `input_source` in the code to use your webcam.
+- **Pre-recorded video**: By specifying the path to the input video file.
 
-- Convert KSL gestures into both written and spoken language.
-- Assist non-impaired users in understanding sign language during conversations.
-- Provide real-time translation using an AI-based sign recognition model that analyzes video input.
-
-## Dataset
-The Sign2Speech functionality was developed using the **KSL-GUIDE** dataset, a large-scale Korean Sign Language dataset designed for guiding the deaf and hard-of-hearing. The key reference for this dataset is:
-
-- Ham, Soomin, et al. "Ksl-guide: A large-scale Korean sign language dataset including interrogative sentences for guiding the deaf and hard-of-hearing." 2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021). IEEE, 2021.
-
-## Key Features
-- **Sign2Speech**: Real-time sign language translation to text and speech.
-- **Speech2Sign**: (Not included in this repository) Converts spoken language into sign language using a 3D avatar.
-- **Multi-party Communication**: (Not included in this repository) Facilitates group communication with real-time speech and sign language translation.
-
-## How to Use
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/Sign2Speech_inf.git
+## Output
+The output will include:
+- Translated text in real-time based on KSL gestures.
+- Optionally, the translated text will be converted into synthesized speech using a text-to-speech engine. In this experiment, we utilized the **ChatGPT API** to generate text-to-speech output, providing a smooth and natural voice for real-time communication.
